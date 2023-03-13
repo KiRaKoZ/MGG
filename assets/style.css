@@ -17,3 +17,8 @@ h2 {
 p {
   font-weight: 500;
 }
+
+.test{
+  font-size: 14px;
+  font-variant-caps: all-petite-caps;
+}
