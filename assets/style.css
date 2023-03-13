@@ -1,6 +1,55 @@
 @font-face {
   font-family: 'Noto Sans Georgian', sans-serif;
-  src: url(assets/Fonts/NotoSansGeorgian-VariableFont_wdth\,wght.ttf);
+  font-weight: 900;
+  src: url(/assets/Fonts/static/NotoSansGeorgian/NotoSansGeorgian-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-weight: 800;
+  src: url(/assets/Fonts/static/NotoSansGeorgian/NotoSansGeorgian-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-weight: 700;
+  src: url(/assets/Fonts/static/NotoSansGeorgian/NotoSansGeorgian-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-weight: 600;
+  src: url(/assets/Fonts/static/NotoSansGeorgian/NotoSansGeorgian-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-weight: 500;
+  src: url(/assets/Fonts/static/NotoSansGeorgian/NotoSansGeorgian-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-weight: 400;
+  src: url(/assets/Fonts/static/NotoSansGeorgian/NotoSansGeorgian-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-weight: 300;
+  src: url(/assets/Fonts/static/NotoSansGeorgian/NotoSansGeorgian-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-weight: 200;
+  src: url(/assets/Fonts/static/NotoSansGeorgian/NotoSansGeorgian-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  font-weight: 100;
+  src: url(/assets/Fonts/static/NotoSansGeorgian/NotoSansGeorgian-Thin.ttf);
 }
 
 body {
