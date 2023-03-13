@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+h1 {
+  font-variant-caps: all-small-caps;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 14px;
+  font-variant-caps: all-small-caps;
+}
+
+p {
+  font-weight: 500;
+}
