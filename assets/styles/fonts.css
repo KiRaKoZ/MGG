@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Noto Sans Georgian';
+    src: url('/assets/Fonts/NotoSansGeorgian-Regular.eot');
+    src: url('/assets/Fonts/NotoSansGeorgian-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/Fonts/NotoSansGeorgian-Regular.woff2') format('woff2'),
+        url('/assets/Fonts/NotoSansGeorgian-Regular.woff') format('woff'),
+        url('/assets/Fonts/NotoSansGeorgian-Regular.ttf') format('truetype'),
+        url('/assets/Fonts/NotoSansGeorgian-Regular.svg#NotoSansGeorgian-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Noto Sans Georgian';
+}
