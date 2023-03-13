@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Noto Sans Georgian';
+    font-family: 'Noto Sans Georgian' sans-serif;
     src: url('/assets/Fonts/NotoSansGeorgian-Regular.eot');
     src: url('/assets/Fonts/NotoSansGeorgian-Regular.eot?#iefix') format('embedded-opentype'),
         url('/assets/Fonts/NotoSansGeorgian-Regular.woff2') format('woff2'),
@@ -12,5 +12,9 @@
 }
 
 body {
-    font-family: 'Noto Sans Georgian';
+    font-family: 'Noto Sans Georgian' sans-serif;
 }
+
+/* .small-caps {
+    font-variant-caps: small-caps;
+} */
