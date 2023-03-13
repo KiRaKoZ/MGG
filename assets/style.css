@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Noto Sans Georgian', sans-serif;
+  src: url(assets/Fonts/NotoSansGeorgian-VariableFont_wdth\,wght.ttf);
+}
 
 body {
   font-family: 'Noto Sans Georgian', sans-serif;
 }
 
 h1 {
-  font-variant-caps: all-small-caps;
-  font-size: 16px;
+  font-variant-caps: petite-caps;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 h2 {
-  font-size: 14px;
-  font-variant-caps: all-small-caps;
+  font-size: 18px;
+  font-variant-caps: all-petite-caps;
 }
 
 p {
   font-weight: 500;
-}
-
-.test{
   font-size: 14px;
-  font-variant-caps: all-petite-caps;
 }
