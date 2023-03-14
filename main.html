@@ -13,6 +13,7 @@
 
   <!-- Icons Import -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,700,1,200" />
 
   <title>MY.GOV.GE</title>
    
@@ -20,10 +21,18 @@
 
 <body>
   <h1>ავტორიზაცია</h1>
-  <button class="transparent-button transparent-button-text ">ღილაკი</button>
-  <button type="submit" class="blue-button blue-button-text">ღილაკი</button>
+  <button type="button" aria-label="Click me for some action" class="transparent-button transparent-button-text ">ღილაკი</button>
+  <button type="button" class="blue-button blue-button-text">ღილაკი</button>
   
-  
+<div class="InputItem">
+  <label for="username">მომხმარებელი</label>
+  <input type="text" id="username" name="username" aria-describedby="username-desc username-status">
+  <div id="username-desc" class="input-description-error"><span class="material-symbols-rounded">
+    warning
+    </span>ამ ველის შევსება სავალდებულოა</div>
+  <div id="username-status" class="input-status" role="status" aria-live="polite"></div>
+</div>
+
   
 
 </body>
