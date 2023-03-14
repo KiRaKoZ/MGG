@@ -255,9 +255,9 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-/* input[type=number] {
+input[type=number] {
   -moz-appearance: textfield;
-} */
+}
 
 .selected-mail-button{
     font-size: 14px;
@@ -397,6 +397,7 @@ input::-webkit-inner-spin-button {
     gap: 12px;
     width: 100%;
     height: auto;
+    display: none;
 }
 
 .form-main-container{
