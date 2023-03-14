@@ -164,6 +164,9 @@
     border: 1px solid rgba(201, 208, 225, 0.3);
     border-radius: 8px;
 }
+.global-input:focus{
+    box-shadow: 0px 0px 0px 3px #84DAFF;
+}
 
 .global-input::-webkit-input-placeholder{
     height: 22px;
@@ -269,7 +272,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 24px;
-    width: 451px;
+    min-width: 320px;
+    max-width: 451px;
     height: auto;
 }
 
@@ -350,3 +354,9 @@
 }
 
 /* Global Containers Done*/
+
+
+
+
+
+

@@ -66,11 +66,39 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    white-space: nowrap;
     padding: 0px 1px;
     gap: 10px;
     width: 100%;
     height: 19px;
 }
+
+.mobile_phone_ct{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.mobile_select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px 10px 14px;
+    gap: 4px;
+    width: 78px;
+    height: 42px;
+    position: absolute;
+    cursor: pointer;
+}
+.mobile_select:focus{
+    outline: none;
+}
+
+.mobile_placeholder{
+    padding: 14px 0px 14px 90px !important;
+}
+
 
 
 
@@ -116,3 +144,51 @@
     }
 }
 /* Spinner Done */
+
+ 
+
+/* Responsive Mobile */
+
+@media(max-width: 385px) {
+    .container{
+        gap: 24px !important;
+    }
+    .bottom_password_content {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .header_right_components{
+        display: none;
+    }
+    
+    .header_content_container{
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 340px) {
+    .mobile_placeholder{
+        padding: 14px 0px 14px 70px !important;
+    }
+    
+    .mobile_select{
+        padding: 10px 5px 10px 8px !important;
+        width: 60px !important;
+    }
+    .authorization-metod-icon{
+        padding: 10px !important;
+
+    }
+    .centered-forms{
+        min-width: 250px !important;
+    }
+    .form-bottom-container{
+        justify-content: center !important;
+        gap: unset;
+    }
+}
+
+
+/* Responsive Mobile Done */
