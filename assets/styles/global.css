@@ -1,3 +1,9 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+
 
 /* Button Base */
 .blue-button{
@@ -16,6 +22,7 @@
     border-radius: 8px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    
 }
 
 .blue-button:enabled:hover{
@@ -34,11 +41,18 @@
 .blue-button-text{
     width: auto;
     height: 22px;
-    font-family: 'Noto Sans Georgian';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.formated-text-1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
 }

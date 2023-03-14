@@ -11,6 +11,6 @@
     font-display: swap;
 }
 
-body {
+body, select {
     font-family: 'Noto Sans Georgian';
 }
