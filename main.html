@@ -52,7 +52,7 @@
                     <div class="authorization-metod-icon">
                         <span class="material-symbols-Rounded brown-color">qr_code_scanner</span>
                     </div>
-                    <span class="formated-text-2">ახალი პირადობის მოწმობით</span>
+                    <span class="formated-text-2 nowrap">ახალი პირადობის მოწმობით</span>
                 </div>
             </div>
 
@@ -65,12 +65,12 @@
                     <div class="authorization-metod-icon">
                         <span class="material-symbols-Rounded brown-color">person</span>
                     </div>
-                    <span class="formated-text-2">სახელით და პაროლით</span>
+                    <span class="formated-text-2 nowrap">სახელით და პაროლით</span>
                 </div>
             </div>
 
 
-             <div class="content-container active">
+             <div class="content-container active" role="region" aria-label="Login Form">
                 <div class="form-main-container ">
                     <div class="form-top-container">
                         <div class="blue-icon-container">
@@ -84,13 +84,22 @@
                     <div class="form-middle-container">
                         <div class="inputs-main-container">
                             <label for="users" class="formated-text-1">მომხმარებელი</label>
-                            <input type="text" class="global-input" placeholder="ელ.ფოსტა ან მობილური">
+                            <input type="text" id="users" name="users" class="global-input" aria-describedby="username-desc username-status" aria-label="Username" required placeholder="ელ.ფოსტა ან მობილური">
+                            <div id="users" class="input-description-error active" role="alert">
+                                <span class="material-symbols-rounded">warning</span>
+                                ამ ველის შევსება სავალდებულოა
+                            </div>
+                              <div id="users" class="input-status" role="status" aria-live="polite"></div>
                         </div>
                             
                         <div class="inputs-main-container">
                             <label for="password" class="formated-text-1">პაროლი</label>
-                            <input type="password" class="global-input" placeholder="ჩაწერეთ პაროლი">
-
+                            <input type="password" id="password" class="global-input" placeholder="ჩაწერეთ პაროლი" aria-describedby="username-desc username-status" aria-label="password" >
+                            <div id="password" class="input-description-error active" role="alert">
+                                <span class="material-symbols-rounded">warning</span>
+                                ამ ველის შევსება სავალდებულოა
+                            </div>
+                              <div id="password" class="input-status" role="status" aria-live="polite"></div>
                              <div class="bottom_password_content">
                                 <div class="show_password">
                                     <input id="show-password" type="checkbox"></input> 
@@ -113,7 +122,7 @@
 
 
 <!-- QR Code Login Continue-->
-            <div class="content-container active">
+            <div class="content-container active" role="region" aria-label="Login Form">
                 <div class="form-main-container ">
                     <div class="form-top-container">
                         <div class="blue-icon-container">
@@ -135,7 +144,7 @@
 
 <!-- Start Email-input with ID -->
 
-            <div class="content-container active">
+            <div class="content-container active" role="region" aria-label="Registration form, email input">
                 <div class="form-main-container ">
                     <div class="form-top-container">
                         <div class="blue-icon-container">
@@ -150,7 +159,12 @@
                     <div class="form-middle-container">
                     <div class="inputs-main-container">
                         <label for="email" class="formated-text-1">ელ.ფოსტა</label>
-                        <input type="email" id="email" class="global-input" placeholder="example@email.com">
+                        <input type="email" id="email" class="global-input" placeholder="example@email.com" aria-describedby="username-desc username-status" aria-label="email">
+                        <div id="email" class="input-description-error active" role="alert">
+                            <span class="material-symbols-rounded">warning</span>
+                            ამ ველის შევსება სავალდებულოა
+                        </div>
+                          <div id="email" class="input-status" role="status" aria-live="polite"></div>
                     </div>
                 </div>
 
@@ -190,12 +204,17 @@
                     </div>
                     <div class="inputs-main-container">
                         <label for="number" class="formated-text-1">ერთჯერადი კოდი</label>
-                        <div  id="number" class="inputs-code-container">
+                        <div  id="number" id="number" class="inputs-code-container" aria-describedby="username-desc username-status" aria-label="PIN code">
                             <input type="number" class="global-input">
                             <input type="number" class="global-input">
                             <input type="number" class="global-input">
                             <input type="number" class="global-input">
                         </div>
+                        <div id="number" class="input-description-error active" role="alert"> 
+                            <span class="material-symbols-rounded">warning</span>
+                            ამ ველის შევსება სავალდებულოა
+                        </div>
+                          <div id="number" class="input-status" role="status" aria-live="polite"></div>
                      <span class="formated-text-1 grey-color-500" >კოდის ხელახლა გაგზავნა: 3:00</span> 
                      <a href="#" class="formated-text-1 blue-color" >კოდის ხელახლა გაგზავნა</a> 
                     </div>
@@ -214,7 +233,7 @@
 
 
 <!-- ID Registration With Country -->
-            <div class="content-container active">
+            <div class="content-container active" role="region" aria-label="Registration form, phone number input">
                 <div class="form-main-container ">
                 
                     <div class="form-top-container">
@@ -242,7 +261,12 @@
                     <div class="form-middle-container">
                     <div class="inputs-main-container">
                         <label for="phone" class="formated-text-1">ტელეფონის ნომერი</label>
-                        <input type="number" id="phone" class="global-input" placeholder="მაგ. 512 000 000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                        <input type="number" id="phone" class="global-input" placeholder="მაგ. 512 000 000" aria-describedby="username-desc username-status" aria-label="Phone number" >
+                        <div id="phone" class="input-description-error active" role="alert">
+                            <span class="material-symbols-rounded">warning</span>
+                            ამ ველის შევსება სავალდებულოა
+                        </div>
+                          <div id="phone" class="input-status" role="status" aria-live="polite"></div>
                     </div>
                     </div>
                 
@@ -258,7 +282,7 @@
 
 
 <!--  Start Mobile-verification with ID-->
-            <div class="content-container active">
+            <div class="content-container active" role="region" aria-label="Registration form, Phone number verification">
                 <div class="form-main-container ">
                 
                     <div class="form-top-container">
@@ -281,12 +305,17 @@
                     </div>
                     <div class="inputs-main-container">
                         <label for="number" class="formated-text-1">ერთჯერადი კოდი</label>
-                        <div  id="number" class="inputs-code-container">
+                        <div  id="number" class="inputs-code-container" aria-describedby="username-desc username-status" aria-label="PIN code">
                             <input type="number" class="global-input">
                             <input type="number" class="global-input">
                             <input type="number" class="global-input">
                             <input type="number" class="global-input">
                         </div>
+                        <div id="number" class="input-description-error active" role="alert">
+                            <span class="material-symbols-rounded">warning</span>
+                            ამ ველის შევსება სავალდებულოა
+                        </div>
+                          <div id="number" class="input-status" role="status" aria-live="polite"></div>
                     <span class="formated-text-1 grey-color-500" >კოდის ხელახლა გაგზავნა: 3:00</span> 
                     <a href="#" class="formated-text-1 blue-color" >კოდის ხელახლა გაგზავნა</a> 
                     
@@ -308,7 +337,7 @@
 
 <!-- Start Assigned-file with ID -->
 
-            <div class="content-container active">
+            <div class="content-container active" role="region" aria-label="Registration form, download attached file">
                 <div class="form-main-container ">
                     <div class="form-top-container">
                         <div class="blue-icon-container">
@@ -344,7 +373,7 @@
 
 <!-- password restore First Step -->
 
-            <div class="content-container active">
+            <div class="content-container active" role="region" aria-label="Password reset form">
                 <div class="form-main-container ">
                     <div class="form-top-container">
                         <div class="blue-icon-container">
@@ -358,7 +387,12 @@
                     <div class="form-middle-container">
                         <div class="inputs-main-container">
                             <label for="users" class="formated-text-1">პირადობის ნომერი</label>
-                            <input type="text" class="global-input" placeholder="მაგ. 01010000000">
+                            <input type="text" id="users" class="global-input" placeholder="მაგ. 01010000000" aria-describedby="username-desc username-status" aria-label="Username">
+                            <div id="mobile" class="input-description-error active" role="alert">
+                                <span class="material-symbols-rounded">warning</span>
+                                ამ ველის შევსება სავალდებულოა
+                            </div>
+                              <div id="users" class="input-status" role="status" aria-live="polite"></div>
                         </div>
                             
                         <div class="inputs-main-container">
@@ -369,12 +403,22 @@
                                 <option value="number">580</option>
                                 <option value="number">581</option>
                             </select>
-                            <input type="mobile" class="global-input mobile_placeholder" placeholder="ჩაწერეთ მობილური">
+                            <input type="mobile" id="mobile" class="global-input mobile_placeholder" placeholder="ჩაწერეთ მობილური" aria-describedby="username-desc username-status" aria-label="phone number">
                             </div>
+                            <div id="mobile" class="input-description-error active" role="alert">
+                                <span class="material-symbols-rounded">warning</span>
+                                ამ ველის შევსება სავალდებულოა
+                            </div>
+                              <div id="mobile" class="input-status" role="status" aria-live="polite"></div>
                         </div>
                         <div class="inputs-main-container">
                             <label for="email" class="formated-text-1">ელ. ფოსტა</label>
                             <input type="email" class="global-input" placeholder="მაგ. example@email.com">
+                            <div id="email" class="input-description-error active" role="alert">
+                                <span class="material-symbols-rounded">warning</span>
+                                ამ ველის შევსება სავალდებულოა
+                            </div>
+                              <div id="email" class="input-status" role="status" aria-live="polite"></div>
                         </div>
                     </div>
                     <div class="form-bottom-container">
@@ -388,7 +432,7 @@
 
 
 
-            <div class="content-container active">
+            <div class="content-container active" role="region" aria-label="Passowrd reset form, verification">
                 <div class="form-main-container ">
                     <div class="form-top-container">
                         <div class="blue-icon-container">
@@ -409,12 +453,17 @@
                         </div>
                         <div class="inputs-main-container">
                             <label for="number" class="formated-text-1">ერთჯერადი კოდი</label>
-                            <div  id="number" class="inputs-code-container">
+                            <div  id="number" class="inputs-code-container" aria-describedby="username-desc username-status" aria-label="PIN code">
                                 <input type="number" class="global-input">
                                 <input type="number" class="global-input">
                                 <input type="number" class="global-input">
                                 <input type="number" class="global-input">
                             </div>
+                            <div id="email" class="input-description-error active" role="alert">
+                                <span class="material-symbols-rounded">warning</span>
+                                ამ ველის შევსება სავალდებულოა
+                            </div>
+                              <div id="email" class="input-status" role="status" aria-live="polite"></div>
                         <span class="formated-text-1 grey-color-500" >კოდის ხელახლა გაგზავნა: 3:00</span> 
                         <a href="#" class="formated-text-1 blue-color" >კოდის ხელახლა გაგზავნა</a> 
                         </div>
@@ -427,12 +476,17 @@
                         </div>
                         <div class="inputs-main-container">
                             <label for="number" class="formated-text-1">ერთჯერადი კოდი</label>
-                            <div  id="number" class="inputs-code-container">
+                            <div  id="number" class="inputs-code-container" aria-describedby="username-desc username-status" aria-label="PIN code">
                                 <input type="number" class="global-input">
                                 <input type="number" class="global-input">
                                 <input type="number" class="global-input">
                                 <input type="number" class="global-input">
                             </div>
+                            <div id="email" class="input-description-error active" role="alert">
+                                <span class="material-symbols-rounded">warning</span>
+                                ამ ველის შევსება სავალდებულოა
+                            </div>
+                              <div id="email" class="input-status" role="status" aria-live="polite"></div>
                             <span class="formated-text-1 grey-color-500" >კოდის ხელახლა გაგზავნა: 3:00</span> 
                             <a href="#" class="formated-text-1 blue-color" >კოდის ხელახლა გაგზავნა</a> 
                         </div>
@@ -449,7 +503,7 @@
 
 
 
-            <div class="content-container active" >
+            <div class="content-container active" role="region" aria-label="Password reset form, New password">
                 <div class="form-main-container ">
                     <div class="form-top-container">
                         <div class="blue-icon-container">
@@ -463,11 +517,21 @@
                     <div class="form-middle-container">
                         <div class="inputs-main-container">
                             <label for="password" class="formated-text-1">ახალი პაროლი</label>
-                            <input type="password" class="global-input" placeholder="შეიყვანეთ პაროლი">
+                            <input type="password" id="password" class="global-input" placeholder="შეიყვანეთ პაროლი" aria-describedby="username-desc username-status" aria-label="new password">
+                            <div id="password" class="input-description-error active" role="alert">
+                                <span class="material-symbols-rounded">warning</span>
+                                ამ ველის შევსება სავალდებულოა
+                            </div>
+                              <div id="password" class="input-status" role="status" aria-live="polite"></div>
                         </div>
                         <div class="inputs-main-container">
                             <label for="password" class="formated-text-1">გაიმეორეთ ახალი პაროლი</label>
-                            <input type="password" class="global-input" placeholder="შეიყვანეთ პაროლი">
+                            <input type="password" id="password" class="global-input" placeholder="შეიყვანეთ პაროლი" aria-describedby="username-desc username-status" aria-label="repeate new password">
+                            <div id="password" class="input-description-error active" role="alert">
+                                <span class="material-symbols-rounded">warning</span>
+                                ამ ველის შევსება სავალდებულოა
+                            </div>
+                              <div id="password" class="input-status" role="status" aria-live="polite"></div>
                         </div>
                     </div>
                     <div class="form-bottom-container">

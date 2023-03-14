@@ -259,6 +259,42 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.input-description-error .material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 00;
+    color: #7A0000;
+    font-size: 16px;
+    margin: 8px;
+  }
+
+  .input-description-error {
+    color: #7A0000;
+    font-size: 14px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  input:enabled:hover{
+    border: 1px solid #2970FF;
+  }
+  input:optional {
+    border-color: rgba(201, 208, 225, 0.5);
+  }
+  input:required {
+    border-color: rgba(201, 208, 225, 0.5);
+  }
+  input:invalid {
+    border-color: rgba(255, 71, 71, 1);
+  }
+  input:disabled {
+    background: #F9F9FB;
+    border: 1px solid rgba(201, 208, 225, 0.5);
+  }
+
 .selected-mail-button{
     font-size: 14px;
     font-weight: 500;
