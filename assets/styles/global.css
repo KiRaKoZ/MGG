@@ -298,6 +298,12 @@
 }
 
 
+[aria-disabled="true"] {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+}
+
 .form-top-container{
     display: flex;
     flex-direction: column;
