@@ -258,9 +258,9 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+/* input[type=number] {
   -moz-appearance: textfield;
-}
+} */
 
 .selected-mail-button{
     font-size: 14px;
@@ -395,7 +395,7 @@ select{
 
 /* Global Containers */
 .active{
-display: flex !important;
+    display: flex !important;
 }
 
 .content-main-container{
@@ -415,7 +415,6 @@ display: flex !important;
 }
 
 .content-container{
-    display: none;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
