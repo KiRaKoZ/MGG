@@ -5,8 +5,6 @@
 }
 
 
-
-
 /* Global Colors */
 
 .brown-color{
@@ -152,12 +150,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 24px 32px;
     gap: 12px;
     isolation: isolate;
-
+    height: auto;
     border: 1px solid #EEF4FF;
-border-radius: 8px;
+    border-radius: 8px;
 }
 
 
@@ -293,29 +290,8 @@ input::-webkit-inner-spin-button {
     border: 1px solid rgba(201, 208, 225, 0.3);
     border-radius: 8px;
     background: transparent;
-
-    background-image:
-    linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%);
-    background-position:
-      calc(100% - 20px) calc(1.4em + 2px),
-      calc(100% - 15px) calc(1.4em + 2px),
-      calc(100% - 2.5em) 0.5em;
-    background-size:
-      5px 5px,
-      5px 5px,
-      1px 1.5em;
-    background-repeat: no-repeat;
+    cursor: pointer;
 }
-
-select{
-    margin: 0;      
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
 
 
 /* Button, Inputs and Icons Base Done*/
@@ -477,8 +453,6 @@ select{
     height: 48px;
 }
 
-
-
 .inputs-main-container{
     display: flex;
     flex-direction: column;
@@ -501,9 +475,3 @@ select{
 }
 
 /* Global Containers Done*/
-
-
-
-
-
-
