@@ -1,0 +1,212 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Importing Styles -->
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <link rel="stylesheet" href="./assets/styles/fonts.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/global.css">
+
+  <!-- Icons Import -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <title>MY.GOV.GE</title>
+   
+</head>
+
+<body>
+    <div class="container">
+        <header class="header_main_container">
+            <div class="header_content_container">
+                <div class="header_logo">my.gov.ge</div>
+                <div class="header_right_components">
+                    <div class="dropDown_text_ct">
+                        <select name="language" id="language" class="dropdown_ct formated-text-1">
+                            <option value="ქართული">ქართული</option>
+                            <option value="English">English</option>
+                            <option value="Russian">Russian</option>
+                        </select>
+                    </div>
+                    <div class="help_text_ct">
+                        <span class="formated-text-1">დახმარება</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<!-- Diabled area >>>    aria-disabled="true" -->
+
+        <section class="content-main-container">
+            <div class="centered-forms">
+
+
+
+            <div class="top-text-container">
+                <span class="top-text">ავტორიზაცია</span>
+
+                <div class="authorization-metod">
+                    <div class="authorization-metod-icon">
+                        <span class="material-symbols-rounded brown-color">person</span>
+                    </div>
+                    <span class="formated-text-1 nowrap">სახელით და პაროლით</span>
+                </div>
+
+            </div>
+
+<!-- Start Authorithation with ID -->
+
+             <div class="content-container active">
+                <div class="form-main-container ">
+
+                    <div class="form-top-container">
+
+                        <div class="blue-icon-container">
+                            <span class="material-symbols-rounded">qr_code_scanner</span>
+                        </div>
+                        <span class="formated-text-2">ახალი პირადობის მოწმობით</span>
+                        <span class="formated-text-1 grey-color-500">
+                          გთხოვთ მოათავსოთ პირადობის მოწმობა წამკითხველში
+                        </span>
+                    </div>
+ 
+                    <div class="form-bottom-container">
+                      <button class="transparent-button"><span role="button" aria-label="პირადობით ავტორიზაციის ინსტრუქცია" class="formated-text-1 blue-color ">ინსტრუქცია</span></button>
+                      <button class="blue-button"> <span class="blue-button-text ">შემდეგი</span></button>
+
+                    </div> 
+                </div>
+            </div> 
+
+<!-- End Authorithation with ID -->
+
+<!-- Start Email-input with ID -->
+
+            <div class="content-container active">
+              <div class="form-main-container ">
+              
+                  <div class="form-top-container">
+                  
+                      <div class="blue-icon-container">
+                          <span class="material-symbols-rounded">qr_code_scanner</span>
+                      </div>
+                      <span class="formated-text-2">რეგისტრცია ID ბარათით</span>
+                      <span class="formated-text-1 grey-color-500">
+                        გთხოვთ მიუთითოთ თვენი ელექტრონული ფოსტის მისამართი
+                      </span>
+                  </div>
+                
+                  <div class="form-middle-container">
+                    <div class="inputs-main-container">
+                        <label for="email" class="formated-text-1">ელ.ფოსტა</label>
+                        <input type="email" id="email" class="global-input" placeholder="example@email.com">
+                    </div>
+                </div>
+
+                  <div class="form-bottom-container">
+                    <button class="transparent-button"> <span class="transparent-button-text  black-color">გაუქმება</span></button>
+                    <button class="blue-button"> <span class="blue-button-text ">შემდეგი</span></button>
+                  
+                  </div> 
+              </div>
+            </div> 
+
+<!-- End Email-input with ID -->
+
+<!-- Start Email-verification with ID -->
+
+<div class="content-container active">
+  <div class="form-main-container ">
+  
+      <div class="form-top-container">
+      
+          <div class="blue-icon-container">
+              <span class="material-symbols-rounded">qr_code_scanner</span>
+          </div>
+          <span class="formated-text-2">ახალი პირადობის მოწმობით</span>
+          <span class="formated-text-1 grey-color-500">
+            გთხოვთ მოათავსოთ პირადობის მოწმობა წამკითხველში
+          </span>
+      </div>
+
+      <div class="form-middle-container">
+        <div class="selected-mail-button">
+          <span>example@mail.com</span>
+          <button class="icon-button">
+            <span class="material-symbols-rounded brown-color">close</span>
+          </button>
+        </div>
+        <div class="inputs-main-container">
+            <label for="number" class="formated-text-1">ერთჯერადი კოდი</label>
+            <div  id="number" class="inputs-code-container">
+              <input type="number" class="global-input">
+              <input type="number" class="global-input">
+              <input type="number" class="global-input">
+              <input type="number" class="global-input">
+            </div>
+        </div>
+      </div>
+    
+      <div class="form-bottom-container">
+        <button class="transparent-button"> <span class="transparent-button-text  black-color">გაუქმება</span></button>
+        <button class="blue-button"> <span class="blue-button-text ">შემდეგი</span></button>
+      </div> 
+  </div>
+</div> 
+
+<!-- End Email-verification with ID -->
+
+<!-- Start Phone-input with ID -->
+
+<div class="content-container active">
+  <div class="form-main-container ">
+  
+      <div class="form-top-container">
+      
+          <div class="blue-icon-container">
+              <span class="material-symbols-rounded">qr_code_scanner</span>
+          </div>
+          <span class="formated-text-2">ახალი პირადობის მოწმობით</span>
+          <span class="formated-text-1 grey-color-500">
+            გთხოვთ მოათავსოთ პირადობის მოწმობა წამკითხველში
+          </span>
+      </div>
+
+      <div class="form-middle-container">
+        <div class="inputs-main-container">
+          <label for="country">ქვეყანა</label>
+
+          <select name="country" id="country">
+            <option value="Georgia">საქართველო</option>
+            <option value="Germany">გერმანია</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-bottom-container">
+        <button class="transparent-button"> <span class="transparent-button-text  black-color">გაუქმება</span></button>
+        <button class="blue-button"> <span class="blue-button-text ">შემდეგი</span></button>
+      </div> 
+  </div>
+</div> 
+
+<!-- End Phone-input with ID -->
+
+            <!-- <span class="loader-line"></span> -->
+
+            </div>
+            
+        </section>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
+
