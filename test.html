@@ -118,6 +118,92 @@
 
 <!-- Start Email-verification with ID -->
 
+            <div class="content-container active">
+              <div class="form-main-container ">
+              
+                  <div class="form-top-container">
+                  
+                      <div class="blue-icon-container">
+                          <span class="material-symbols-rounded">qr_code_scanner</span>
+                      </div>
+                      <span class="formated-text-2">რეგისტრაცია ID ბარათით</span>
+                      <span class="formated-text-1 grey-color-500">
+                        შეიყვანეთ ელ.ფოსტაზე გამოგზავნილი ერთჯერადი კოდი
+                      </span>
+                  </div>
+                
+                  <div class="form-middle-container">
+                    <div class="selected-mail-button">
+                      <span>example@mail.com</span>
+                      <button class="icon-button">
+                        <span class="material-symbols-rounded brown-color">close</span>
+                      </button>
+                    </div>
+                    <div class="inputs-main-container">
+                        <label for="number" class="formated-text-1">ერთჯერადი კოდი</label>
+                        <div  id="number" class="inputs-code-container">
+                          <input type="number" class="global-input">
+                          <input type="number" class="global-input">
+                          <input type="number" class="global-input">
+                          <input type="number" class="global-input">
+                        </div>
+                    </div>
+                  </div>
+                
+                  <div class="form-bottom-container">
+                    <button class="transparent-button"> <span class="transparent-button-text  black-color">გაუქმება</span></button>
+                    <button class="blue-button"> <span class="blue-button-text ">შემდეგი</span></button>
+                  </div> 
+              </div>
+            </div> 
+
+<!-- End Email-verification with ID -->
+
+<!-- Start Phone-input with ID -->
+
+            <div class="content-container active">
+              <div class="form-main-container ">
+              
+                  <div class="form-top-container">
+                  
+                      <div class="blue-icon-container">
+                          <span class="material-symbols-rounded">qr_code_scanner</span>
+                      </div>
+                      <span class="formated-text-2">რეგისტრაცია ID ბარათით</span>
+                      <span class="formated-text-1 grey-color-500">
+                        გთხოვთ მიუთითოთ თვენი ტელეფონის ნომერი
+                      </span>
+                  </div>
+                
+                  <div class="form-middle-container">
+                    <div class="inputs-main-container">
+                      <label for="country">ქვეყანა</label>
+                    
+                      <select name="country" id="country" class="global-select">
+                        <option value="Georgia">საქართველო</option>
+                        <option value="Germany">გერმანია</option>
+                      </select>
+                    </div>
+                  </div>
+                
+                  <div class="form-middle-container">
+                    <div class="inputs-main-container">
+                        <label for="phone" class="formated-text-1">ტელეფონის ნომერი</label>
+                        <input type="number" id="phone" class="global-input" placeholder="მაგ. 512 000 000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" >
+                    </div>
+                  </div>
+                
+                  <div class="form-bottom-container">
+                    <button class="transparent-button"> <span class="transparent-button-text  black-color">გაუქმება</span></button>
+                    <button class="blue-button"> <span class="blue-button-text ">შემდეგი</span></button>
+                  </div> 
+              </div>
+            </div> 
+
+<!-- End Phone-input with ID -->
+
+<!-- Start Phone-verification with ID -->
+
 <div class="content-container active">
   <div class="form-main-container ">
   
@@ -128,13 +214,13 @@
           </div>
           <span class="formated-text-2">ახალი პირადობის მოწმობით</span>
           <span class="formated-text-1 grey-color-500">
-            გთხოვთ მოათავსოთ პირადობის მოწმობა წამკითხველში
+            აღსადგენად შეიყვანეთ ელ.ფოსტაზე გამოგზავნილი ერთჯერადი კოდი
           </span>
       </div>
-
+    
       <div class="form-middle-container">
         <div class="selected-mail-button">
-          <span>example@mail.com</span>
+          <span>+995 5512 00 00 00</span>
           <button class="icon-button">
             <span class="material-symbols-rounded brown-color">close</span>
           </button>
@@ -157,43 +243,44 @@
   </div>
 </div> 
 
-<!-- End Email-verification with ID -->
+<!-- End Phone-verification with ID -->
 
-<!-- Start Phone-input with ID -->
+<!-- Start Assigned-file with ID -->
 
 <div class="content-container active">
   <div class="form-main-container ">
-  
+
       <div class="form-top-container">
-      
+
           <div class="blue-icon-container">
               <span class="material-symbols-rounded">qr_code_scanner</span>
           </div>
-          <span class="formated-text-2">ახალი პირადობის მოწმობით</span>
+          <span class="formated-text-2">რეგისტრაცია ID ბარათით</span>
           <span class="formated-text-1 grey-color-500">
-            გთხოვთ მოათავსოთ პირადობის მოწმობა წამკითხველში
+            გთხოვთ, იხილოთ შეთანხმება 
           </span>
       </div>
 
       <div class="form-middle-container">
-        <div class="inputs-main-container">
-          <label for="country">ქვეყანა</label>
+        <button class="transparent-button transparent-button-icon transparent-button-text">
+          <span class=" black-color">შეთანხმება</span>
+          <span class="material-symbols-rounded">download</span>
+        </button>
+        
 
-          <select name="country" id="country">
-            <option value="Georgia">საქართველო</option>
-            <option value="Germany">გერმანია</option>
-          </select>
-        </div>
       </div>
 
       <div class="form-bottom-container">
-        <button class="transparent-button"> <span class="transparent-button-text  black-color">გაუქმება</span></button>
+        <button class="transparent-button"><span role="button" aria-label="პირადობით ავტორიზაციის ინსტრუქცია" class="formated-text-1 blue-color ">ინსტრუქცია</span></button>
         <button class="blue-button"> <span class="blue-button-text ">შემდეგი</span></button>
+
       </div> 
   </div>
 </div> 
 
-<!-- End Phone-input with ID -->
+<!-- End Assigned-file with ID -->
+
+
 
             <!-- <span class="loader-line"></span> -->
 
